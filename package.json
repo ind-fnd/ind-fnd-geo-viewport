@@ -1,8 +1,8 @@
 {
   "license": "BSD-2-Clause",
-  "name": "@mapbox/geo-viewport",
+  "name": "ind-fnd-geo-viewport",
   "repository": {
-    "url": "git@github.com:mapbox/geo-viewport.git",
+    "url": "git@https://github.com/ind-fnd/ind-fnd-geo-viewport.git",
     "type": "git"
   },
   "author": "Tom MacWright",

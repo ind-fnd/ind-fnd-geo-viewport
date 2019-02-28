@@ -1,5 +1,9 @@
 [![Build Status](https://travis-ci.org/mapbox/geo-viewport.svg)](https://travis-ci.org/mapbox/geo-viewport)
 
+```
+  just fixed Zoom is NaN when using rectangular bounds
+```
+
 # geo-viewport
 
 Turns bounding boxes / extents into centerpoint & zoom
@@ -10,7 +14,7 @@ or a script tag.
 
 ## Install
 
-    npm install --save @mapbox/geo-viewport
+    npm install --save ind-fnd-geo-viewport
 
 Or use a plugin:
 

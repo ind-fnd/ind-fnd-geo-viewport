@@ -25,7 +25,7 @@ function getAdjusted(base, ratios, allowFloat) {
     var adjusted = Math.min(
             base - (Math.log(ratios[0]) / Math.log(2)),
             base - (Math.log(ratios[1]) / Math.log(2)));
-    
+
     return allowFloat ? adjusted : Math.floor(adjusted);
 }
 
@@ -36,8 +36,8 @@ function viewport(bounds, dimensions, minzoom, maxzoom, tileSize, allowFloat) {
     var base = maxzoom,
         bl = merc.px([bounds[0], bounds[1]], base),
         tr = merc.px([bounds[2], bounds[3]], base),
-        width = tr[0] - bl[0],
-        height = bl[1] - tr[1],
+        width = Math.abs(tr[0] - bl[0]),
+        height = Math.abs(bl[1] - tr[1]),
         ratios = [width / dimensions[0], height / dimensions[1]],
         center = [(bounds[0] + bounds[2]) / 2, (bounds[1] + bounds[3]) / 2],
         adjusted = getAdjusted(base, ratios, allowFloat),
